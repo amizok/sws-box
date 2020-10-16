@@ -1,0 +1,16 @@
+webapp/
+
+!.gitkeep
+.env
+
+# Mac
+.DS_Store
+# Windows
+Thumbs.db
+[Dd]esktop.ini
+
+# tags file
+GPATH
+GRTAGS
+GTAGS
+
