@@ -18,7 +18,7 @@ RUN apk update                       && \
             $PHPIZE_DEPS                \
             zlib-dev                    \
             cyrus-sasl-dev              \
-            git                         \
+#            git                         \
             autoconf                    \
             g++                         \
             libtool                     \
@@ -26,6 +26,7 @@ RUN apk update                       && \
             pcre-dev                 && \
     \
     apk add --no-cache                  \
+        git                             \
         mysql-client                    \
         tini                            \
         libintl                         \
@@ -45,9 +46,7 @@ RUN apk update                       && \
         libssh2-dev                     \
         libxslt-dev                  && \
     \
-    tar xfz /tmp/5.1.1.tar.gz   && \
-    \
-    mv phpredis-5.1.1 /usr/src/php/ext/redis    && \
+    tar xfz /tmp/5.1.1.tar.gz && mv phpredis-5.1.1 /usr/src/php/ext/redis    && \
     \
     git clone https://github.com/php-memcached-dev/php-memcached.git /usr/src/php/ext/memcached/    && \
     \
@@ -105,4 +104,3 @@ RUN apk update                       && \
 # set recommended PHP.ini settings
 COPY conf.d/* /usr/local/etc/php/conf.d/
 CMD  ["php-fpm"]
-
