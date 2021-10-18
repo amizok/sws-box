@@ -12,7 +12,7 @@
 Enter the folder and rename env-example to .env.
 
 ```
-cp env-exapmple .env
+cp env-example .env
 ```
 
 `.env`の下記の値はアプリケーションと合わせてください
