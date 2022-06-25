@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
         libjpeg62-turbo-dev \
         libpng-dev \
 #    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install pdo_mysql
+    && docker-php-ext-install pdo_mysql mysqli
 
 # set recommended PHP.ini settings
 COPY conf.d/* /usr/local/etc/php/conf.d/
