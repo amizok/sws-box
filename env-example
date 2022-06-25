@@ -9,9 +9,9 @@ PHP_VERSION=7.3
 # Mysql Setting
 MYSQL_VERSION=5.7
 MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=database_name
-MYSQL_USER=user_name
-MYSQL_PASSWORD=user_password
+MYSQL_DATABASE=sws-db
+MYSQL_USER=sws-manager
+MYSQL_PASSWORD=sws202206
 
 # MemCached Setting
 MEMCACHED_VERSION=1.5.20
